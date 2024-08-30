@@ -1,0 +1,46 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e0f7fa; /* Light teal background color */
+    color: #004d40; /* Dark teal text color */
+    margin: 0;
+    padding: 0;
+}
+
+#main-content {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff; /* White background for content */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h1 {
+    color: #00796b; /* Teal color for the main header */
+    text-align: center;
+}
+
+ul#assignments-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+ul#assignments-list li {
+    margin: 10px 0;
+}
+
+ul#assignments-list a {
+    text-decoration: none; /* Remove underline from links */
+    color: #00796b; /* Teal color for links */
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #e0f2f1; /* Light teal background for links */
+}
+
+ul#assignments-list a:hover {
+    background-color: #004d40; /* Dark teal background on hover */
+    color: #ffffff; /* White text on hover */
+}

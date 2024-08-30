@@ -1,0 +1,84 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('https://images.pexels.com/photos/459252/pexels-photo-459252.jpeg?cs=srgb&dl=andaman-sea-beach-beautiful-459252.jpg&fm=jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Wrapper for content */
+#content-wrapper {
+    max-width: 900px;
+    margin: 50px auto;
+    background-color: rgba(100, 208, 255, 0.922); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Main heading */
+h1 {
+    color:  #fff; /* Orange color for the main heading */
+    text-align: center;
+}
+
+/* Navigation bar styles */
+nav ul#nav-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFB74D;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+nav ul#nav-links li {
+    margin: 0;
+}
+
+nav ul#nav-links a {
+    color:  #fff ; /* white color for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul#nav-links a:hover {
+    color: #333; /* black color on hover */
+}
+
+/* Subheader styling */
+h2 {
+    color: #FFB74D; /* orange color for subheadings */
+}
+
+/* Image container styles */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.image-container img {
+    border: 5px solid #FFB74D; /* Orange border around images */
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f1912a;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color:#FFB74D;
+}
+
+table th, table td {
+    border: 1px solid #fff;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f1912a; /* Orange background for table headers */
+    color: #333;
+}
