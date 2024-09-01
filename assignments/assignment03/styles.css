@@ -1,0 +1,174 @@
+/* Existing CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e5eaf5;
+}
+
+header, footer {
+    background-color: #e5eaf5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background-color: #494d5F;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* Remove underline from navigation links */
+    padding: 10px 20px;
+    display: block;
+}
+
+main {
+    display: flex;
+    padding: 20px;
+}
+
+aside {
+    background-color: #494d5F;
+    color:white ;
+    padding: 20px;
+    flex: 1 1 20%;
+    margin-right: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: underline; /* Underline the sidebar links */
+}
+
+section {
+    flex: 3 1 70%;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between articles */
+}
+
+article {
+    background-color:#d0bdf4 ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    flex: 1 1 calc(25% - 20px); /* 4 articles per row with gap considered */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-sizing: border-box; /* Ensure padding and borders are included in the total width */
+}
+
+article img {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+/* New CSS for Additional Boxes */
+.additional-boxes {
+    display: flex;
+    flex-direction: column; /* Stack boxes vertically */
+    gap: 20px; /* Space between boxes */
+    margin-top: 20px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    background-color: #a0d2eb;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.box-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.box-image {
+    background-color:#494d5F ;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.box-info {
+    flex: 1;
+}
+
+.box-info h3 {
+    margin: 0;
+}
+
+.box-info p {
+    margin: 5px 0 0;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    aside {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .article-container {
+        flex-direction: column;
+    }
+
+    article {
+        flex: 1 1 100%;
+        margin-bottom: 20px; /* Add margin between stacked articles */
+    }
+
+    .additional-boxes {
+        flex-direction: column;
+    }
+
+    .box {
+        flex-direction: column; /* Ensure the box content is stacked vertically */
+    }
+
+    .box-info {
+        margin-top: 10px; /* Adjust margin for the text under the name */
+    }
+}
