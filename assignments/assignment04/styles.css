@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #003C71;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between; /* Space between the title and navigation */
+    align-items: center; /* Center vertically */
+    max-width: 1200px; /* Adjust based on your design */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 0 20px; /* Add some padding on the sides */
+}
+
+.header-title h1 {
+    font-size: 1.2em; /* Smaller font size for "University of" */
+    margin: 0;
+}
+
+.header-title h2 {
+    font-size: 2.5em; /* Larger font size for "South Carolina" */
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #003C71;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
