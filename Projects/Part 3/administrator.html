@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing stylesheet -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Pie Chart -->
+</head>
+<body>
+
+    <header>
+        <h1 class="site-title">Sunny Solutions</h1>
+    </header>
+
+    <div class="container">
+        <!-- Navigation Section (Reused) -->
+        <nav class="navigation">
+            <h2>Navigation</h2>
+            <ul>
+                <li><a href="index.html"><span class="home-icon">🏠</span> Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sunscreens.html">Sunscreens</a></li>
+                <li><a href="administrator.html">Administrator</a></li>
+                <li><a href="guide.html">Buying Guide</a></li>
+                <li><a href="#">Sign In</a></li>
+            </ul>
+            <div class="contact">
+                <img src="https://via.placeholder.com/150" alt="Centered Image" class="bottom-image">
+                <h3>Contact Us</h3>
+                <p>Email: sunny@solutions.com</p>
+                <div class="social-icons">
+                    <a href="#"><img src="https://via.placeholder.com/32x32" alt="Instagram"></a>
+                    <a href="#"><img src="https://via.placeholder.com/32x32" alt="Twitter"></a>
+                    <a href="#"><img src="https://via.placeholder.com/32x32" alt="Mail"></a>
+                    <a href="#"><img src="https://via.placeholder.com/32x32" alt="Facebook"></a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Administrator Content -->
+        <main>
+            <h2 class="subheader">Administrator Dashboard</h2>
+
+            <div class="admin-content">
+                <div class="reviews-column">
+                    <h3>Manage Reviews</h3>
+                    <ul class="reviews-list">
+                        <li>
+                            Review 1 <button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button> <button class="add-btn">➕</button>
+                        </li>
+                        <li>
+                            Review 2 <button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button> <button class="add-btn">➕</button>
+                        </li>
+                        <li>
+                            Review 3 <button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button> <button class="add-btn">➕</button>
+                        </li>
+                        <li>
+                            Review 4<button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button> <button class="add-btn">➕</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="pie-chart-section">
+                    <h3>Sunscreen Popularity</h3>
+                    <canvas id="popularityChart"></canvas>
+
+                    <!-- Form to Add Sunscreen -->
+                    <div class="add-sunscreen-form">
+                        <h4>Add Sunscreen</h4>
+                        <form>
+                            <label for="name">Sunscreen Name:</label>
+                            <input type="text" id="name" name="name" required><br>
+
+                            <label for="type">Type:</label>
+                            <input type="text" id="type" name="type" required><br>
+
+                            <label for="spf">SPF:</label>
+                            <input type="number" id="spf" name="spf" required><br>
+
+                            <label for="image">Insert Image:</label>
+                            <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+                            <button type="submit">Add Sunscreen</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Pie chart for sunscreen popularity
+        const ctx = document.getElementById('popularityChart').getContext('2d');
+        const popularityChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Sunscreen 1', 'Sunscreen 2', 'Sunscreen 3', 'Sunscreen 4'],
+                datasets: [{
+                    label: 'Sunscreen Popularity',
+                    data: [30, 20, 25, 25], // Example values, replace with actual data
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#AA96DA'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

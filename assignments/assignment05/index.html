@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Assignment 7</h1> <!-- Title -->
+    <h2>Introduction to JavaScript</h2> <!-- Subheader -->
+    <div class="container">
+        <!-- Counter Section -->
+        <div class="column" id="counter-column">
+            <h3>Count:</h3>
+            <p>Click the column to increase the count.</p>
+            <div class="counter" id="counter">0</div>
+        </div>
+
+        <!-- Random Image Section -->
+        <div class="column" id="image-column">
+            <h3>Random Image</h3>
+            <p>Click the image to refresh it.</p>
+            <img id="random-image" src="https://picsum.photos/300" alt="Random" onclick="refreshImage()">
+        </div>
+
+        <!-- Slider Move Section -->
+        <div class="column" id="slider-column">
+            <h3>Slider Move:</h3>
+            <input type="range" min="0" max="100" value="100" id="slider" oninput="moveSquare()">
+            <div class="slider-container">
+                <div class="slider-square" id="square"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
+    
