@@ -54,7 +54,7 @@ h3 {
 .slider-container {
     width: 100%;
     height: 200px;
-    background-color: #AA96DA; /* Mint for slider background */
+    background-color: #AA96DA; /* light purple for slider background */
     position: relative;
     overflow: hidden;
     border: 1px solid #AA96DA;
@@ -63,7 +63,7 @@ h3 {
 .slider-square {
     width: 200px;
     height: 200px;
-    background-color: #C5FAD5; /* Light Purple for square */
+    background-color: #C5FAD5; 
     position: absolute;
     left: 0;
     top: 0;
