@@ -452,6 +452,153 @@ body, html {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+/* General Styles for Product Details Page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #A7EFFF, #FFFBEC); /* Sky to sand gradient */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to right, #87CEEB, #00BFFF); /* Blue gradient header */
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD700; /* Golden color for a sunny effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow for emphasis */
+}
+
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none; /* Hide the regular menu on smaller screens */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00BFFF;
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .navigation-menu.show {
+        display: flex; /* Show the menu when hamburger is clicked */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show the hamburger menu icon on smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Product Details Section */
+.product-details-section {
+    padding: 40px;
+    background-color: #FFFBEC; /* Light sand color background */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 200px; /* Adjusted width to fit nicely on the page */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slight rounding on the edges */
+    margin-bottom: 20px; /* Space between the image and the text */
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-details-section p {
+    margin: 10px 0;
+    color: #555; /* Slightly darker text for better readability */
+}
+
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.product-features li {
+    background: url('icons/check-mark.png') no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #FF4500; /* Bright orange for the price */
+    font-weight: bold;
+}
+
+.back-to-products {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #FFA500; /* Bright orange button */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.back-to-products:hover {
+    background-color: #FF4500; /* Darker orange on hover */
+}
+
 
 
 /* Footer Styles */
