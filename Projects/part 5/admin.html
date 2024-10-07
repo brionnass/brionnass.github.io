@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator - Sunny Solutions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Sunny Solutions</h1>
+    </header>
+
+    <aside class="navigation" id="nav-menu">
+        <h2><i class="home-icon">&#8962;</i> Navigation</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sunscreens.html">Sunscreens</a></li>
+                <li><a href="admin.html">Administrator</a></li>
+                <li><a href="buying-guide.html">Buying Guide</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </nav>
+        <div class="contact">
+            <img src="https://via.placeholder.com/150" alt="Contact Image" class="bottom-image">
+            <h3>Contact Us</h3>
+            <p>(123) 456-7890</p>
+            <div class="social-icons">
+                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Instagram"></a>
+                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Twitter"></a>
+                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Mail"></a>
+                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Facebook"></a>
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <h2 class="subheader">Administrator Dashboard</h2>
+
+        <div class="admin-content">
+            <!-- Manage Reviews Section -->
+            <div class="reviews-column">
+                <h3>Manage Reviews</h3>
+                <ul class="reviews-list">
+                    <li>Review 1 <button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button></li>
+                    <li>Review 2 <button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button></li>
+                    <li>Review 3 <button class="delete-btn">🗑️</button> <button class="archive-btn">📦</button></li>
+                </ul>
+            </div>
+
+            <!-- Sunscreen Popularity Chart Section -->
+            <div class="pie-chart-section">
+                <h3>Sunscreen Popularity</h3>
+                <img src="https://via.placeholder.com/300x300" alt="Placeholder for Sunscreen Popularity Chart">
+            </div>
+
+            <!-- Add Sunscreen Form Section -->
+            <div class="add-sunscreen-form">
+                <h4>Add New Sunscreen Product</h4>
+                <form>
+                    <label for="name">Sunscreen Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="type">Type:</label>
+                    <input type="text" id="type" name="type" required><br>
+
+                    <label for="spf">SPF Level:</label>
+                    <input type="number" id="spf" name="spf" required><br>
+
+                    <label for="image">Product Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*"><br><br>
+
+                    <button type="submit">Add Sunscreen</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
