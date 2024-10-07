@@ -4,58 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sunscreens - Sunny Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
 </head>
 <body>
-    <header>
-        <h1 class="site-title">Sunny Solutions</h1>
-    </header>
 
-    <aside class="navigation" id="nav-menu">
-        <h2><i class="home-icon">&#8962;</i> Navigation</h2>
-        <nav>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Sunny Solutions</div>
+        <nav class="navigation-menu" id="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="sunscreens.html">Sunscreens</a></li>
-                <li><a href="admin.html">Administrator</a></li>
                 <li><a href="buying-guide.html">Buying Guide</a></li>
-                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="admin.html">Administrator</a></li>
             </ul>
         </nav>
-        <div class="contact">
-            <img src="https://via.placeholder.com/150" alt="Contact Image" class="bottom-image">
-            <h3>Contact Us</h3>
-            <p>(123) 456-7890</p>
-            <div class="social-icons">
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Instagram"></a>
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Twitter"></a>
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Mail"></a>
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Facebook"></a>
-            </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </aside>
+    </header>
 
-    <main>
-        <h2 class="subheader">Kinds of Sunscreens</h2>
-        <div class="sunscreen-box">
-            <div class="sunscreen-item">
-                <img src="images/sunscreen1.jpg" alt="Sunscreen 1" class="sunscreen-image">
-                <p>Sunscreen 1</p>
-                <a href="product-detail1.html" class="details-button">Details</a>
-            </div>
-            <div class="sunscreen-item">
-                <img src="images/sunscreen2.jpg" alt="Sunscreen 2" class="sunscreen-image">
-                <p>Sunscreen 2</p>
-                <a href="product-detail2.html" class="details-button">Details</a>
-            </div>
-            <div class="sunscreen-item">
-                <img src="images/sunscreen3.jpg" alt="Sunscreen 3" class="sunscreen-image">
-                <p>Sunscreen 3</p>
-                <a href="product-detail3.html" class="details-button">Details</a>
-            </div>
+    <!-- Hero Section -->
+    <section class="hero-section sunscreen-hero" style="background: url('images/beach-background.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h1>Explore Our Sunscreens</h1>
+            <p>Find the perfect sunscreen to keep your skin safe and healthy under the sun.</p>
         </div>
-    </main>
+    </section>
+
+    <!-- Product Grid Section -->
+    <!-- Product Grid Section -->
+<section class="product-grid">
+    <h2 class="section-title">Our Best-Selling Sunscreens</h2>
+    <div class="product-gallery">
+        <div class="product-item">
+            <img src="images/sunscreen1.png" alt="Sunscreen 1">
+            <h3>Sunscreen 1</h3>
+            <p>SPF 50 - High protection for sensitive skin.</p>
+            <a href="product-detail1.html" class="product-button">Learn More</a>
+        </div>
+        <div class="product-item">
+            <img src="images/sunscreen2.png" alt="Sunscreen 2">
+            <h3>Sunscreen 2</h3>
+            <p>SPF 30 - Water-resistant for active days.</p>
+            <a href="product-detail2.html" class="product-button">Learn More</a>
+        </div>
+        <div class="product-item">
+            <img src="images/sunscreen3.png" alt="Sunscreen 3">
+            <h3>Sunscreen 3</h3>
+            <p>SPF 40 - Lightweight formula for daily use.</p>
+            <a href="product-detail3.html" class="product-button">Learn More</a>
+        </div>
+        <div class="product-item">
+            <img src="images/sunscreen4.png" alt="Sunscreen 4">
+            <h3>Sunscreen 4</h3>
+            <p>SPF 60 - Ultimate sunblock for intense outdoor activities.</p>
+            <a href="product-detail4.html" class="product-button">Learn More</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Sunscreen Recommendation Table Section -->
+    <section class="recommendation-section">
+        <h2 class="section-title">Find the Right Sunscreen for You</h2>
+        <table class="recommendation-table">
+            <thead>
+                <tr>
+                    <th>Factor</th>
+                    <th>Recommended Sunscreen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Skin Tone</td>
+                    <td>Darker Skin: Look for sheer or clear sunscreens that don’t leave a white cast. Tinted sunscreens can also blend well with darker tones. An SPF of 30+ is sufficient for daily use.<br>Lighter Skin: Broad-spectrum sunscreen with SPF 30 or higher, and water-resistant for long sun exposure. Tinted sunscreens may also be helpful for even coverage.</td>
+                </tr>
+                <tr>
+                    <td>Skin Sensitivity</td>
+                    <td>Choose a sunscreen labeled as “hypoallergenic” or “for sensitive skin.” Fragrance-free and alcohol-free options help prevent irritation. Look for gentle ingredients.</td>
+                </tr>
+                <tr>
+                    <td>Weather</td>
+                    <td>Hot and Sunny Weather: Use SPF 50+ and broad-spectrum protection, ideally water-resistant for sweat or water activities.<br>Cold or Cloudy Weather: SPF 30 is typically sufficient, but make sure it’s broad-spectrum to protect against both UVA and UVB rays.</td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td>Children and Babies: Use sunscreen with SPF 30-50, specially formulated for children to avoid irritation.<br>Adults: SPF 30 or higher for daily use, and SPF 50+ for outdoor activities. Use formulations suited to your skin type.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sunny Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the hamburger menu toggle
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navbar = document.getElementById('navbar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
-

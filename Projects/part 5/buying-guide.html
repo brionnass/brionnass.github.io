@@ -4,101 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buying Guide - Sunny Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
 </head>
 <body>
-    <header>
-        <h1 class="site-title">Sunny Solutions</h1>
-    </header>
 
-    <aside class="navigation" id="nav-menu">
-        <h2><i class="home-icon">&#8962;</i> Navigation</h2>
-        <nav>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Sunny Solutions</div>
+        <nav class="navigation-menu" id="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="sunscreens.html">Sunscreens</a></li>
-                <li><a href="admin.html">Administrator</a></li>
                 <li><a href="buying-guide.html">Buying Guide</a></li>
-                <li><a href="signin.html">Sign In</a></li>
+                <li><a href="admin.html">Administrator</a></li>
             </ul>
         </nav>
-        <div class="contact">
-            <img src="https://via.placeholder.com/150" alt="Contact Image" class="bottom-image">
-            <h3>Contact Us</h3>
-            <p>(123) 456-7890</p>
-            <div class="social-icons">
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Instagram"></a>
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Twitter"></a>
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Mail"></a>
-                <a href="#"><img src="https://via.placeholder.com/32x32" alt="Facebook"></a>
-            </div>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
-    </aside>
+    </header>
 
-    <main>
-        <h2 class="subheader">Sunscreen Buying Guide</h2>
+    <!-- Sunscreen Types Section -->
+   <!-- Sunscreen Types Section -->
+<section class="sunscreen-types-section">
+    <h2 class="section-title">Types of Sunscreens</h2>
+    <table class="sunscreen-types-table">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Mineral Sunscreen</th>
+                <th>Chemical Sunscreen</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Active Ingredients</td>
+                <td>Zinc oxide, Titanium dioxide</td>
+                <td>Oxybenzone, Avobenzone, Octinoxate, Homosalate</td>
+            </tr>
+            <tr>
+                <td>How it Works</td>
+                <td>Sits on top of the skin and physically reflects UV rays</td>
+                <td>Absorbs UV rays and converts them into heat</td>
+            </tr>
+            <tr>
+                <td>Suitability for Skin Types</td>
+                <td>Ideal for sensitive skin or acne-prone skin, gentle on skin</td>
+                <td>Better for daily wear or if you prefer lightweight feel</td>
+            </tr>
+            <tr>
+                <td>Time to Effectiveness</td>
+                <td>Works immediately after application</td>
+                <td>Needs 20 minutes to absorb before sun exposure</td>
+            </tr>
+            <tr>
+                <td>Feel/Appearance</td>
+                <td>May leave a white cast or thicker texture</td>
+                <td>Lightweight, often clear and blends seamlessly</td>
+            </tr>
+            <tr>
+                <td>Environmental Impact</td>
+                <td>Reef-safe (usually free of harmful chemicals)</td>
+                <td>Some formulations can be harmful to coral reefs</td>
+            </tr>
+            <tr>
+                <td>Water Resistance</td>
+                <td>Typically water-resistant</td>
+                <td>Water-resistant formulas available, but may need reapplication more frequently</td>
+            </tr>
+            <tr>
+                <td>Longevity</td>
+                <td>Lasts longer on the skin, better for sensitive areas (like face)</td>
+                <td>More frequent reapplication may be needed, depending on the SPF level</td>
+            </tr>
+            <tr>
+                <td>SPF Range</td>
+                <td>Usually ranges from SPF 30 to SPF 50</td>
+                <td>Wide range available, from SPF 15 to SPF 100</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
 
-        <div class="buying-guide-content">
-            <h3>Mineral vs. Chemical Sunscreens</h3>
-            <table class="sunscreen-comparison">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Mineral Sunscreen</th>
-                        <th>Chemical Sunscreen</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Active Ingredients</td>
-                        <td>Zinc Oxide, Titanium Dioxide</td>
-                        <td>Oxybenzone, Avobenzone, Octinoxate, Homosalate</td>
-                    </tr>
-                    <tr>
-                        <td>How it Works</td>
-                        <td>Physically blocks and reflects UV rays</td>
-                        <td>Absorbs UV rays and converts them into heat</td>
-                    </tr>
-                    <tr>
-                        <td>Best For</td>
-                        <td>Sensitive skin, children, and those looking for natural ingredients</td>
-                        <td>Daily wear, sports, and those who prefer a lightweight feel</td>
-                    </tr>
-                    <tr>
-                        <td>Time to Effectiveness</td>
-                        <td>Effective immediately upon application</td>
-                        <td>Requires 20 minutes to fully absorb</td>
-                    </tr>
-                    <tr>
-                        <td>Texture</td>
-                        <td>May leave a white cast or thicker texture</td>
-                        <td>Lightweight, often invisible on the skin</td>
-                    </tr>
-                    <tr>
-                        <td>Environmental Impact</td>
-                        <td>Reef-safe, does not harm coral reefs</td>
-                        <td>May contain ingredients harmful to marine life</td>
-                    </tr>
-                </tbody>
-            </table>
 
-            <h3>Choosing the Right SPF Level</h3>
-            <p>SPF (Sun Protection Factor) measures how well a sunscreen will protect your skin from UVB rays. Here’s a quick guide to choosing the right SPF:</p>
-            <ul>
-                <li><strong>SPF 15-30:</strong> Suitable for daily use, offering moderate protection against sunburn.</li>
-                <li><strong>SPF 30-50:</strong> Provides higher protection, ideal for extended outdoor activities.</li>
-                <li><strong>SPF 50+:</strong> Maximum protection, recommended for sensitive skin or intense sun exposure.</li>
-            </ul>
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sunny Solutions. All rights reserved.</p>
+    </footer>
 
-            <h3>Application Tips for Maximum Protection</h3>
-            <p>To get the most out of your sunscreen, follow these application tips:</p>
-            <ul>
-                <li>Apply sunscreen 15-20 minutes before sun exposure to allow it to absorb into the skin.</li>
-                <li>Reapply every 2 hours, or immediately after swimming or sweating.</li>
-                <li>Use a generous amount of sunscreen to cover all exposed areas, including often-missed spots like the ears, neck, and the tops of your feet.</li>
-            </ul>
-        </div>
-    </main>
+    <script>
+        // JavaScript for the hamburger menu toggle
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navbar = document.getElementById('navbar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
+
+
