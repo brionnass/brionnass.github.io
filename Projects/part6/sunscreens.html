@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunscreens - Sunny Solutions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Sunny Solutions</div>
+        <nav class="navigation-menu" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sunscreens.html">Sunscreens</a></li>
+                <li><a href="buying-guide.html">Buying Guide</a></li>
+                <li><a href="admin.html">Administrator</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section sunscreen-hero" style="background: url('images/beach-background.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h1>Explore Our Sunscreens</h1>
+            <p>Find the perfect sunscreen to keep your skin safe and healthy under the sun.</p>
+        </div>
+    </section>
+
+    <!-- Product Grid Section -->
+    <section class="product-grid">
+        <h2 class="section-title">Our Best-Selling Sunscreens</h2>
+        <div class="product-gallery" id="sunscreen-products">
+            <!-- Products will be dynamically loaded here via JavaScript -->
+        </div>
+    </section>
+
+                <!-- Sunscreen recommendation table -->
+                <section class="recommendation-section">
+                    <h2 class="section-title">Find the Right Sunscreen for You</h2>
+                    <table class="recommendation-table">
+                        <thead>
+                            <tr>
+                                <th>Factor</th>
+                                <th>Recommended Sunscreen</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Skin Tone</td>
+                                <td>Darker Skin: Look for sheer or clear sunscreens that don’t leave a white cast. Tinted sunscreens can also blend well with darker tones. An SPF of 30+ is sufficient for daily use.<br>Lighter Skin: Broad-spectrum sunscreen with SPF 30 or higher, and water-resistant for long sun exposure. Tinted sunscreens may also be helpful for even coverage.</td>
+                            </tr>
+                            <tr>
+                                <td>Skin Sensitivity</td>
+                                <td>Choose a sunscreen labeled as “hypoallergenic” or “for sensitive skin.” Fragrance-free and alcohol-free options help prevent irritation. Look for gentle ingredients.</td>
+                            </tr>
+                            <tr>
+                                <td>Weather</td>
+                                <td>Hot and Sunny Weather: Use SPF 50+ and broad-spectrum protection, ideally water-resistant for sweat or water activities.<br>Cold or Cloudy Weather: SPF 30 is typically sufficient, but make sure it’s broad-spectrum to protect against both UVA and UVB rays.</td>
+                            </tr>
+                            <tr>
+                                <td>Age</td>
+                                <td>Children and Babies: Use sunscreen with SPF 30-50, specially formulated for children to avoid irritation.<br>Adults: SPF 30 or higher for daily use, and SPF 50+ for outdoor activities. Use formulations suited to your skin type.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            
+                <!-- Footer Section -->
+                <footer class="footer">
+                    <p>&copy; 2024 Sunny Solutions. All rights reserved.</p>
+                </footer>
+            
+                <script>
+                    // JavaScript for the hamburger menu toggle
+                    const hamburgerMenu = document.getElementById('hamburger-menu');
+                    const navbar = document.getElementById('navbar');
+            
+                    hamburgerMenu.addEventListener('click', () => {
+                        navbar.classList.toggle('show');
+                    });
+                </script>
+            </body>
+            </html>
+
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
+

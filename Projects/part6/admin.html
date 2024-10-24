@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator - Sunny Solutions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your existing CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Link to Chart.js library -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Sunny Solutions</div>
+        <nav class="navigation-menu" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sunscreens.html">Sunscreens</a></li>
+                <li><a href="buying-guide.html">Buying Guide</a></li>
+                <li><a href="admin.html">Administrator</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main class="admin-section">
+        <h2 class="section-title">Administrator Dashboard</h2>
+
+        <!-- Manage Reviews Section -->
+        <div class="reviews-management">
+            <h3>Manage Reviews</h3>
+            <ul class="reviews-list">
+                <li>
+                    <span>Review 1: "Great sunscreen, highly recommend!"</span>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li>
+                    <span>Review 2: "Not the best for sensitive skin."</span>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li>
+                    <span>Review 3: "Affordable and effective in the sun."</span>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+                <li>
+                    <span>Review 4: "Leaves a white cast on darker skin tones."</span>
+                    <button class="edit-btn">Edit</button>
+                    <button class="delete-btn">Delete</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sunscreen Popularity Graph Section -->
+        <div class="sunscreen-graph-section">
+            <h3>Sunscreen Popularity</h3>
+            <canvas id="sunscreenPopularityChart"></canvas> <!-- Canvas for the chart -->
+        </div>
+
+        <!-- Add Sunscreen Section -->
+        <div class="add-sunscreen-form">
+            <h3>Add New Sunscreen</h3>
+            <form>
+                <label for="sunscreen-name">Sunscreen Name:</label>
+                <input type="text" id="sunscreen-name" name="sunscreen-name" required>
+
+                <label for="spf-level">SPF Level:</label>
+                <input type="number" id="spf-level" name="spf-level" required>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <label for="sunscreen-image">Upload Image:</label>
+                <input type="file" id="sunscreen-image" name="sunscreen-image" accept="image/*">
+
+                <button type="submit" class="submit-btn">Add Sunscreen</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sunny Solutions. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for the hamburger menu toggle
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const navbar = document.getElementById('navbar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+
+        // Chart.js - Sunscreen Popularity Graph
+        const ctx = document.getElementById('sunscreenPopularityChart').getContext('2d');
+        const sunscreenPopularityChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Sunscreen 1', 'Sunscreen 2', 'Sunscreen 3', 'Sunscreen 4'],
+                datasets: [{
+                    data: [30, 25, 20, 25], // Example data for each sunscreen's popularity
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0'],
+                    hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                }
+            }
+        });
+    </script>
+</body>
+</html>

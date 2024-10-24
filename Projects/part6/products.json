@@ -1,0 +1,40 @@
+[
+    {
+        "_id": 1,
+        "img_name": "images/sunscreen1.jpg",
+        "name": "Sunny SPF 50",
+        "spf": "50",
+        "price": "$15.99",
+        "description": "A high protection sunscreen with broad-spectrum UVA/UVB protection.",
+        "features": ["Water-resistant", "Non-greasy", "For all skin types"]
+    },
+    {
+        "_id": 2,
+        "img_name": "images/sunscreen2.jpg",
+        "name": "Sunny SPF 30",
+        "spf": "30",
+        "price": "$12.99",
+        "description": "Lightweight daily sunscreen offering UV protection.",
+        "features": ["Fast-absorbing", "Fragrance-free", "Moisturizing"]
+    },
+    {
+        "_id": 3,
+        "img_name": "images/sunscreen3.jpg",
+        "name": "Sunny Kids SPF 40",
+        "spf": "40",
+        "price": "$10.99",
+        "description": "Gentle sunscreen for kids, with non-irritating formula.",
+        "features": ["Hypoallergenic", "Water-resistant", "Pediatrician recommended"]
+    },
+    {
+        "_id": 4,
+        "img_name": "images/sunscreen4.jpg",
+        "name": "Sunny Sport SPF 70",
+        "spf": "70",
+        "price": "$19.99",
+        "description": "Maximum protection for outdoor activities.",
+        "features": ["Sweat-proof", "Non-comedogenic", "Long-lasting protection"]
+    }
+]
+
+  
