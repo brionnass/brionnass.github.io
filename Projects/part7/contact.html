@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Jasper - Sunny Solutions</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your Sunny Solutions CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo">Sunny Solutions</div>
+        <nav class="navigation-menu" id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sunscreens.html">Sunscreens</a></li>
+                <li><a href="buying-guide.html">Buying Guide</a></li>
+                <li><a href="admin.html">Administrator</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <h1>Contact Sunny Solutions</h1>
+        <div class="container">
+            <!-- Contact Form -->
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="First and Last" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" placeholder="Message" required></textarea>
+                
+                <button type="submit">Submit Form</button>
+                <p id="responseMessage"></p>
+            </form>
+
+            <!-- Video or Map Embed -->
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/iJEddtGRE8U"
+                    title="Sunscreen Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Sunny Solutions. All rights reserved.</p>
+    </footer>
+
+    <script src="form.js" defer></script> <!-- Link to JavaScript file for form handling -->
+</body>
+</html>
+

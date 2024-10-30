@@ -1,0 +1,696 @@
+/* General Page Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #A7EFFF, #FFFBEC); /* Sky to sand gradient */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.header {
+    background: linear-gradient(to right, #87CEEB, #00BFFF); /* Blue gradient header */
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD700; /* Golden color for a sunny effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow for emphasis */
+}
+
+.navigation-menu {
+    display: flex;
+}
+
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none; /* Hide the regular menu on smaller screens */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00BFFF;
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .navigation-menu.show {
+        display: flex; /* Show the menu when hamburger is clicked */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show the hamburger menu icon on smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hamburger-menu span {
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 4px 0;
+    }
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 5%; /* Adjusted padding for better responsiveness */
+    background: url('images/beach-background.jpg') no-repeat center center/cover; /* Beach image */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 100%; /* Ensure the section does not exceed viewport width */
+    overflow: hidden; /* Hide any potential overflow */
+}
+
+.hero-content h1 {
+    font-size: 56px;
+    color: #FFD700; /* Golden color for the sun */
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #fff;
+}
+
+.hero-button {
+    background-color: #FFA500; /* Bright orange */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+.hero-button:hover {
+    background-color: #FF4500; /* Darker orange on hover */
+}
+
+.hero-image-container {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap; /* Ensure images adjust to smaller screen sizes */
+}
+
+.hero-image {
+    width: 300px;
+    margin-right: 10px;
+}
+
+.beach-items {
+    width: 200px;
+}
+
+/* Featured Products Section */
+.featured-products {
+    background-color: #FFFBEC;
+    padding: 50px;
+    text-align: center;
+    max-width: 100%; /* Prevents overflow */
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+.product-item {
+    background-color: #FFF;
+    border: 1px solid #FFD700; /* Sun-yellow border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 180px;
+    text-align: center;
+    max-width: 100%; /* Ensure items do not exceed container width */
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+}
+
+.product-button {
+    background-color: #FFA500; /* Orange button */
+    color: white;
+    padding: 5px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.product-button:hover {
+    background-color: #FF4500; /* Bright hover color */
+}
+.about-us-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: url('images/beach-sunscreen-bg.png') no-repeat center center/cover; /* Beach image background */
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.about-us-container img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+    max-width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for readability */
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.mission-statement {
+    padding: 30px;
+    background-color: #FFFBEC; /* Soft sand color */
+    text-align: center;
+    border: 1px solid #FFD700;
+    margin: 40px 20px;
+    border-radius: 8px;
+}
+
+.mission-statement h2 {
+    font-size: 24px;
+    color: #FFD700; /* Golden color for emphasis */
+}
+
+.mission-statement p {
+    font-size: 18px;
+    color: #333;
+}
+.product-grid {
+    background-color: #FFFBEC;
+    padding: 50px;
+    text-align: center;
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Ensure responsiveness on smaller screens */
+}
+
+.product-item {
+    background-color: #FFF;
+    border: 1px solid #FFD700; /* Sun-yellow border */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    text-align: center;
+    transition: transform 0.2s; /* Smooth hover effect */
+}
+
+.product-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.product-item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.product-button {
+    background-color: #FFA500; /* Orange button */
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.product-button:hover {
+    background-color: #FF4500; /* Bright hover color */
+}
+
+/* Sunscreen Recommendation Table */
+/* Sunscreen Recommendation Table Styles */
+.recommendation-section {
+    background-color: #FFF;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    margin: 20px 0;
+}
+
+.recommendation-table th, .recommendation-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.recommendation-table th {
+    background-color: #FFD700; /* Sun-yellow header */
+    color: #333;
+    font-weight: bold;
+}
+
+.recommendation-table tr:nth-child(even) {
+    background-color: #FFFBEC; /* Alternating row color */
+}
+
+.recommendation-table td {
+    vertical-align: top; /* Align text to the top for consistency */
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+/* Sunscreen Types Table Section */
+.sunscreen-types-section {
+    background-color: #FFFBEC;
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sunscreen-types-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.sunscreen-types-table th, .sunscreen-types-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.sunscreen-types-table th {
+    background-color: #FFD700; /* Sun-yellow header */
+    color: #333;
+}
+
+.sunscreen-types-table tr:nth-child(even) {
+    background-color: #FFFBEC; /* Alternating row color */
+}
+
+.sunscreen-types-table td {
+    vertical-align: top;
+}
+/* Administrator Page Styles */
+.admin-section {
+    padding: 40px;
+    background-color: #FFFBEC;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.reviews-management {
+    margin-bottom: 30px;
+}
+
+.reviews-list {
+    list-style: none;
+    padding: 0;
+}
+
+.reviews-list li {
+    background-color: #FFF;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-btn, .delete-btn {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.edit-btn:hover, .delete-btn:hover {
+    background-color: #FF4500; /* Darker orange on hover */
+}
+
+.add-sunscreen-form {
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #FFD700;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-sunscreen-form h3 {
+    margin-top: 0;
+}
+
+.add-sunscreen-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.add-sunscreen-form input[type="text"], 
+.add-sunscreen-form input[type="number"],
+.add-sunscreen-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-btn {
+    background-color: #FFA500;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #FF4500; /* Bright hover color */
+}
+/* Sunscreen Graph Section */
+.sunscreen-graph-section {
+    margin: 30px auto;
+    max-width: 600px;
+    background-color: #FFF;
+    padding: 20px;
+    border: 1px solid #FFD700;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+/* General Styles for Product Details Page */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #A7EFFF, #FFFBEC); /* Sky to sand gradient */
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(to right, #87CEEB, #00BFFF); /* Blue gradient header */
+    padding: 15px 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+    color: #FFD700; /* Golden color for a sunny effect */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Slight shadow for emphasis */
+}
+
+.navigation-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+/* Hamburger Menu Styles */
+.hamburger-menu {
+    display: none; /* Hidden by default */
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+@media (max-width: 768px) {
+    .navigation-menu {
+        display: none; /* Hide the regular menu on smaller screens */
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #00BFFF;
+        width: 200px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    .navigation-menu.show {
+        display: flex; /* Show the menu when hamburger is clicked */
+    }
+
+    .hamburger-menu {
+        display: flex; /* Show the hamburger menu icon on smaller screens */
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Product Details Section */
+.product-details-section {
+    padding: 40px;
+    background-color: #FFFBEC; /* Light sand color background */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 200px; /* Adjusted width to fit nicely on the page */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Slight rounding on the edges */
+    margin-bottom: 20px; /* Space between the image and the text */
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.product-details-section p {
+    margin: 10px 0;
+    color: #555; /* Slightly darker text for better readability */
+}
+
+.product-features {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+.product-features li {
+    background: url('icons/check-mark.png') no-repeat left center;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 22px;
+    color: #FF4500; /* Bright orange for the price */
+    font-weight: bold;
+}
+
+.back-to-products {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #FFA500; /* Bright orange button */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.back-to-products:hover {
+    background-color: #FF4500; /* Darker orange on hover */
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #00BFFF;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+/* Contact Section */
+.contact-section {
+    background-color: #FFFBEC;
+    padding: 50px 5%;
+    text-align: center;
+}
+
+h1 {
+    color: #FFD700;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px; /* Increase max width */
+    margin: 20px auto;
+    gap: 40px; /* Increase gap between form and video */
+    padding: 40px; /* Add more padding */
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    gap: 10px;
+}
+
+form label {
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+form input, form textarea, form button {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    background-color: #FFA500; /* Match button color with the theme */
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #FF4500;
+}
+
+.video-container {
+    width: 100%;
+    max-width: 600px; /* Increase max width for video */
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden
+    
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px; /* Increase height */
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .video-container iframe {
+        height: 200px;
+    }
+}
+
+
+
